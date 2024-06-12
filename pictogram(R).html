@@ -46,7 +46,7 @@
         <button id="button1" style="padding: 10px; border-radius: 8px; border: 5px solid black;"><h1>시작</h1></button>
         <button id="button2" style="padding: 10px; border-radius: 8px; border: 5px solid black;"><h1>정답 확인</h1></button>
         <p id="message"></p>
-        <!-- 여기에 내용을 추가할 수 있습니다. -->
+        
     </div>
 </body>
 <script>
@@ -69,11 +69,11 @@
 
     function startRadomDisplay() {
         const randomImages = allImages; // 이미지 배열을 복사해 옴
-        randomImages.sort(() => Math.random() - 0.5); // 배열을 랜덤하게 섞음      !!0.5?
+        randomImages.sort(() => Math.random() - 0.5); // 배열을 랜덤하게 섞음      
         const displayedImages = randomImages.slice(0, 5); // 첫 5개의 이미지만 선택
 
         const imageContainer = document.getElementById("imageContainer");
-        imageContainer.innerHTML = ''; // 이미지 초기화 !!innerHTML?
+        imageContainer.innerHTML = ''; // 이미지 초기화 !!
         selectedImages = []; // 선택한 이미지 배열 초기화
 
         displayedImages.forEach((image,index,Array) => {
